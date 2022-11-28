@@ -19,6 +19,38 @@ Knowledge Distillation (KD) is a technique to transfer knowledge from a trained 
 
 We push KD one step further by using an augmentation algorithm based on a server-controlled permutation and mixup augmentation [1] to distill knowledge more efficiently. 
 
+```python
+
+# Global round r of FedAKD starts here
+
+# 1. Local training 
+model.fit(local_data, local_labels, epochs = local_epochs) 
+
+# 2. Receive alpha and beta from server 
+alpha, beta = receive_metadata_from_server(global_round = r)
+
+# 3. mixup augmentation 
+np.random.seed(beta) # beta is used to set the seed to generate the same augmented version of public data across all nodes 
+perm = np.random.permutation(len(pub_data))
+aug_pub_data = alpha * pub_data + (1-alpha) * pub_data[perm, ...]
+
+
+# 4. calculate (1) soft labels (2) performance on test data (prepare local knowledge) 
+# A value indicating the performance is send to weight soft labels proportional to performance
+local_soft_labels = model.predict(aug_pub_data) 
+loss, acc = model.evaluate(test_data, test_labels) 
+
+
+# 5. Send local knowledge, take some rest, then receive global knowledge  
+send_to_server({'soft labels': local_soft_labels, 'performance': acc})
+global_soft_labels = receive_labels_from_server() 
+
+# 6. Digest knowledge 
+model.fit(aug_pub_data, global_soft_labels) 
+
+
+```
+
 
 ## Results 
 
