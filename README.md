@@ -48,6 +48,7 @@ global_soft_labels = receive_labels_from_server()
 # 6. Digest knowledge 
 model.fit(aug_pub_data, global_soft_labels) 
 
+# Global round r of FedAKD ends here
 
 ```
 
