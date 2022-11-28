@@ -67,6 +67,7 @@ We evaluate FedAKD on the two previously mentioned HAR datasets against a recent
 ## References 
 
 [1] Zhang, H., Cisse, M., Dauphin, Y. N., & Lopez-Paz, D. (2017). mixup: Beyond empirical risk minimization. arXiv preprint arXiv:1710.09412.
+
 [2] Li, D., & Wang, J. (2019). Fedmd: Heterogenous federated learning via model distillation. arXiv preprint arXiv:1910.03581.
 
 
