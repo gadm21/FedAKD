@@ -107,4 +107,5 @@ We evaluate FedAKD on the two previously mentioned HAR datasets against a recent
 [intro]: https://github.com/gadm21/FedAKD/blob/main/assets/intro.png
 [KD]: https://github.com/gadm21/FedAKD/blob/main/assets/KD_overview.png
 [hars_dataset]: https://www.kaggle.com/datasets/uciml/human-activity-recognition-with-smartphones
-[FedAKD_timeline]: https://github.com/gadm21/FedAKD/blob/main/assets/fedAKD_timeline.png
+[FedAKD_timeline]: https://github.com/gadm21/FedAKD/blob/main/assets/FedAKD_timeline.png
+
