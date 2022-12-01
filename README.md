@@ -15,7 +15,7 @@ Knowledge Distillation (KD) is a technique to transfer knowledge from a trained 
 > Knowledge Distillation-based Federated Learning enables clients to independenlty design their learning models.
 
 
-## Augmented Knowledge Distillation 
+## Federated Learning via Augmented Knowledge Distillation 
 ![Augmented Knowledge Distillation][FedAKD_timeline]
 We push KD one step further by using an augmentation algorithm based on a server-controlled permutation and mixup augmentation [1] to distill knowledge more efficiently. 
 
