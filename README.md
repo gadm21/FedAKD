@@ -1,9 +1,7 @@
 # FedAKD
 
-### This repository provides scripts of the paper: Federated Learning via Augmented Knowledge Distillation (FedAKD) applied to two Human Activity Recognition (HAR) datsets: 
+### This repository provides scripts of the paper: [Federated Learning via Augmented Knowledge Distillation for Heterogenous Deep Human Activity Recognition Systems][paper_link]
 
-1) Human Activity Recognition using Smartphone [(HARS)][hars_dataset] 
-2) Human Activity Recognition using fitness Band (HARB) (self-collected from Mi Band 4)
 ![federated learning][intro]
 
 
@@ -105,6 +103,7 @@ We evaluate FedAKD on the two previously mentioned HAR datasets against a recent
 
 
 [intro]: https://github.com/gadm21/FedAKD/blob/main/assets/intro.png
+[paper_link]: https://www.mdpi.com/1424-8220/23/1/6
 [KD]: https://github.com/gadm21/FedAKD/blob/main/assets/KD_overview.png
 [hars_dataset]: https://www.kaggle.com/datasets/uciml/human-activity-recognition-with-smartphones
 [FedAKD_timeline]: https://github.com/gadm21/FedAKD/blob/main/assets/FedAKD_timeline.png
