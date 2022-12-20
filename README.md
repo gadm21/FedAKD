@@ -2,15 +2,20 @@
 
 ### This repository provides scripts of the paper: [Federated Learning via Augmented Knowledge Distillation for Heterogenous Deep Human Activity Recognition Systems][paper_link]
 
+Deep learning-based systems for Human Activity Recognition (HAR) are useful for health monitoring and activity tracking on wearable devices, but the training of accurate models often requires large and representative datasets. Federated Learning (FL) is a privacy-preserving approach for utilizing data on users' devices to train deep learning models on large datasets, but it is limited to training homogeneous model architectures. In this paper, we propose Federated Learning via Augmented Knowledge Distillation (FedAKD) for training heterogeneous models in a distributed setting. FedAKD is evaluated on two HAR datasets and is shown to be more flexible and efficient than standard FL, with up to 20% performance gains for clients and 200X less communication overhead compared to other FL methods. FedAKD is also relatively more robust under statistical heterogeneity.
+
 ![federated learning][intro]
 
 
 ## Knowledge Distillation 
-![Knowledge Distillation][KD]
+
 
 Knowledge Distillation (KD) is a technique to transfer knowledge from a trained model to a to-be-trained model. Unlike standard Federated Learning (FL) algorithms (FedAvg) which communicate model-dependent data (gradients or weights), KD can be used in the context of Federated Learning (FL) to distill knowledge among heterogeneous clients by communicating soft labels calculated using an un-labeled shared dataset. 
 
 > Knowledge Distillation-based Federated Learning enables clients to independenlty design their learning models.
+
+![Knowledge Distillation][KD]
+
 
 
 ## Federated Learning via Augmented Knowledge Distillation 
